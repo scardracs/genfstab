@@ -2,15 +2,9 @@ VER=26
 
 PREFIX = /usr/local
 
-BINPROGS = \
-	arch-chroot \
-	genfstab \
-	pacstrap
+BINPROGS = genfstab
 
-MANS = \
-	doc/arch-chroot.8 \
-	doc/genfstab.8 \
-	doc/pacstrap.8
+MANS = doc/genfstab.8
 
 BASH = bash
 
