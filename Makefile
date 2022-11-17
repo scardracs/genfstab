@@ -1,6 +1,4 @@
-VER=26
-
-PREFIX = /usr/local
+VER=27
 
 BINPROGS = genfstab
 
@@ -31,13 +29,13 @@ check: all
 	@r=0; for t in test/test_*; do $(BASH) $$t || { echo $$t fail; r=1; }; done; exit $$r
 
 install: all
-	install -dm755 $(DESTDIR)$(PREFIX)/bin
-	install -m755 $(BINPROGS) $(DESTDIR)$(PREFIX)/bin
+	install -dm755 $(DESTDIR)/bin
+	install -m755 $(BINPROGS) $(DESTDIR)/bin
 	cd completion; for comp in *.bash; do \
-		install -Dm644 $$comp $(DESTDIR)$(PREFIX)/share/bash-completion/completions/$${comp%%.*}; \
+		install -Dm644 $$comp $(DESTDIR)/usr/share/bash-completion/completions/$${comp%%.*}; \
 	done;
 	for manfile in $(MANS); do \
-		install -Dm644 $$manfile -t $(DESTDIR)$(PREFIX)/share/man/man$${manfile##*.}; \
+		install -Dm644 $$manfile -t $(DESTDIR)/usr/share/man/man$${manfile##*.}; \
 	done;
 
 .PHONY: all clean install uninstall
