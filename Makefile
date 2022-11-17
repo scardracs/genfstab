@@ -1,4 +1,4 @@
-VER=27
+VER=28
 
 BINPROGS = genfstab
 
