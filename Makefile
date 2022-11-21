@@ -1,9 +1,7 @@
 VER=28
 
 BINPROGS = genfstab
-
 MANS = doc/genfstab.8
-
 BASH = bash
 
 all: $(BINPROGS) man

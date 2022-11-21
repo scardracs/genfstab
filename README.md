@@ -1,7 +1,7 @@
 # Arch Install Scripts
 
-This is a small suite of scripts aimed at automating some menial
-tasks when installing [Arch Linux](https://www.archlinux.org).
+This script is designed to automate the generetion of
+/etc/fstab when installing [GentooLinux](https://www.gentoo.org).
 
 ## Requirements
 

@@ -1,6 +1,3 @@
 *~
-arch-chroot
 genfstab
-pacstrap
 doc/*.8
-arch-install-scripts-*.tar.gz*
